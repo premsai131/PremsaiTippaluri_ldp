@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>JavaScript Syntax</title>
+   <script 
+       src="abhi.js">
+   </script>
+</head>
+<body>
+
+    <p id ="demo">welcome</p>
+
+    <script type="text/javascript">
+        document.getElementById("demo").innerHTML="classroom learning zemoso";
+        document.write("this is my javascript learning ")
+
+        function hello(Arguments ){
+            document.write("welcome to zemoso technologies");
+        }
+
+        function getcube(){
+           var num= document.getElementById("Number").value;
+           alert("the cube is"+num*num*num);
+        }
+
+        hello();
+    </script>
+
+    <input type="button" value="click here" on click ="hello()"/>
+
+    <form>
+        Enter Num: <input type="text" id="Number">
+        <br/>
+        <input type="button" value="FindCube"
+        onclick="getcube()">
+          
+
+    </form>
+   
+</body>
+</html>
+
