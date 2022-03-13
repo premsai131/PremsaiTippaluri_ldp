@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test where Login is not required">
+        <classes>
+            <class name="com.test.HomePageTest">
+                <methods>
+                    <include name="homePageTitleTest"/>
+                </methods>
+            </class>
+
+            <class name="com.test.SearchPageTest">
+                <methods>
+                    <include name="validateSearchForMobiles"/>
+                    <include name="validateMobileDetails"/>
+                </methods>
+            </class>
+            <class name="com.test.TodaysDealsPageTest">
+                <methods>
+                    <include name="validateTodaysDeal"/>
+                    <include name="validateClickOnThirdDeal"/>
+                    <include name="validateclickOnBoatAirPods"/>
+                    <include name="validateItemAddTOCartQty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+        <test name="Test where login is required">
+            <classes>
+                <class name="com.test.YourAccountsPageTest">
+                    <methods>
+                        <include name="validateSignIn"/>
+                        <include name="validateCheckDeliveryStatus"/>
+                    </methods>
+                </class>
+                <class name="com.test.YourOrdersPageTest">
+                <methods>
+                    <include name="validategoToPastOrders"/>
+                </methods>
+                </class>
+                <class name="com.test.PaymentOptionsPageTest">
+                    <methods>
+                        <include name="validatePaymentOptionBtn"/>
+                        <include name="validateAddNewBankAccount"/>
+                        <include name="validateDeleteBankAccount"/>
+                    </methods>
+                </class>
+                <class name="com.test.DeliveryAddressPageTest">
+                    <methods>
+                        <include name="validateAddNewDeliveryAddress"/>
+                        <include name="validatedeleteAddress"/>
+                    </methods>
+                </class>
+
+
+
+
+            </classes>
+        </test>
+
+</suite>
